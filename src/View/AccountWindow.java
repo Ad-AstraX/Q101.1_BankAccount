@@ -29,7 +29,7 @@ public class AccountWindow extends JFrame{
     }
 
     private void handleInput(){
-        balance.setText(controller.updateAcc() + " €");
+        balance.setText(controller.updateAcc() + " $");
         deposit.addActionListener(new ActionListener() {
             /** @param actionEvent */
             @Override
@@ -38,7 +38,7 @@ public class AccountWindow extends JFrame{
                     messages.setText("You cannot deposit a negative amount of money!");
                 } else {
                     messages.setText(controller.carryOutInstruction(textField1.getText()));
-                    balance.setText(controller.updateAcc() + " €");
+                    balance.setText(controller.updateAcc() + " $");
                 }
                 textField1.setText("");
             }
@@ -51,7 +51,7 @@ public class AccountWindow extends JFrame{
                     messages.setText("You cannot withdraw a negative amount of money!");
                 } else {
                     messages.setText(controller.carryOutInstruction("-" + textField1.getText()));
-                    balance.setText(controller.updateAcc() + " €");
+                    balance.setText(controller.updateAcc() + " $");
                 }
                 textField1.setText("");
             }
