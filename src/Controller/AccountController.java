@@ -15,10 +15,9 @@ public class AccountController {
     public boolean validateInput(String amount) {
         try {
             Double.parseDouble(amount);
-            if(!Pattern.compile("^[0-9]*.[0-9]{0,2}$").matcher(amount).find()) {
-                return false;
+            if(Pattern.compile("^[0-9]*.[0-9]{0,2}$").matcher(amount).find()) {
+                return true;
             }
-            return true;
         } catch (NullPointerException | NumberFormatException e) {
             System.out.println(e.getMessage());
         }
