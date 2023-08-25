@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class AccountWindow extends JFrame{
 
     private AccountController controller;
-    private JPanel panel1;
+    private JPanel checkedIn;
     private JButton withdraw;
     private JTextField inputField;
     private JButton deposit;
@@ -19,7 +19,7 @@ public class AccountWindow extends JFrame{
     public AccountWindow(AccountController controller) {
         this.controller = controller;
 
-        setContentPane(panel1);
+        setContentPane(checkedIn);
         setTitle("Bank");
         setSize(325,200);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

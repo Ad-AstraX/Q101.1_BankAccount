@@ -1,10 +1,15 @@
 package Model;
 
 public class BankAccount {
+    private String name;
+    private int password;
+    private int id;
     private double balance;
 
-    public BankAccount (double balance) {
-        this.balance = balance;
+    public BankAccount (String name, int password/*, int id*/) {
+        this.name = name;
+        this.password = password;
+        this.id = id;
     }
 
     /**
@@ -26,5 +31,13 @@ public class BankAccount {
      */
     public double getBalance() {
         return balance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPassword() {
+        return password;
     }
 }
