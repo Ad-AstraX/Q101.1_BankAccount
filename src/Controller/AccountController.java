@@ -11,7 +11,7 @@ public class AccountController {
     }
 
     /**
-     * Checks whether the input is a valid number with to decimals max
+     * Checks whether the input is a valid number with two decimals max
      * @param amount The String that is to be checked
      * @return A truth value dependent on whether the input is valid
      */
